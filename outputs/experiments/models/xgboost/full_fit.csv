@@ -1,0 +1,2 @@
+model,training_trips,resolved_candidate_rows,positive_candidate_rows,negative_candidate_rows,fit_seconds,partition,device
+xgboost,80,1609263,187005,1422258,3.6788990959976218,train_full_resolved,cuda

@@ -1,0 +1,24 @@
+{
+  "train": {
+    "trips": 80,
+    "observations": 208417,
+    "nodes": 1933485,
+    "arcs": 3876904,
+    "reference_entries": 31336,
+    "invalid_observations": 0,
+    "zero_length_arcs": 100,
+    "duplicate_endpoint_pairs": 1775,
+    "reference_breaks": 13
+  },
+  "student_test": {
+    "trips": 10,
+    "observations": 19160,
+    "nodes": 90689,
+    "arcs": 185041,
+    "reference_entries": 3477,
+    "invalid_observations": 0,
+    "zero_length_arcs": 6,
+    "duplicate_endpoint_pairs": 128,
+    "reference_breaks": 1
+  }
+}

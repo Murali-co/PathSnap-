@@ -1,0 +1,83 @@
+{
+  "model_family": "xgboost",
+  "model_version": "xgboost-cec50de3fcd6",
+  "selected_model_file": "selected_model.joblib",
+  "sha256": "cec50de3fcd61b5cc64c3fffe728ab5f0a8ac3b196c8639eab90a75dc3025c04",
+  "feature_schema": [
+    "distance_m",
+    "distance_rank",
+    "distance_delta_m",
+    "fraction",
+    "endpoint_distance_m",
+    "length_m",
+    "heading_cosine",
+    "signed_motion_m",
+    "heading_reliability",
+    "previous_displacement_m",
+    "next_displacement_m",
+    "speed_mps",
+    "previous_dt_s",
+    "next_dt_s",
+    "gap_flag",
+    "stationary",
+    "straightness_30s",
+    "start_in_degree",
+    "end_out_degree",
+    "reverse_available",
+    "candidate_count",
+    "radius_m"
+  ],
+  "prediction_config": {
+    "seed": 42,
+    "radii_m": [
+      50,
+      100,
+      200,
+      300
+    ],
+    "max_candidates": 16,
+    "gap_seconds": 60,
+    "max_speed_mps": 55,
+    "movement_slack_m": 50,
+    "backward_tolerance_m": 12,
+    "transition_beta_m": 35,
+    "uturn_penalty": 1.0,
+    "folds": 3,
+    "trials": 15,
+    "startup_trials": 5,
+    "label_method": "ordered_occurrence_dp_v1",
+    "label_max_residual_m": 300,
+    "label_skip_penalty": 0.15,
+    "selection": [
+      "cv_mean_trip_top1",
+      "cv_macro_f1",
+      "negative_cv_conditional_observation_loss",
+      "negative_cv_top1_std",
+      "negative_fit_seconds"
+    ]
+  },
+  "prepared_identity": "08b8d1d44dcf8363b036fbbe1324033d46260c97d305f58fd24c2352713ea871",
+  "training_partition": "train_80",
+  "development_partition": "student_test_10",
+  "provenance": {
+    "model": "xgboost",
+    "rule": [
+      "cv_mean_trip_top1",
+      "cv_macro_f1",
+      "negative_cv_conditional_observation_loss",
+      "negative_cv_top1_std",
+      "negative_fit_seconds"
+    ],
+    "basis": "training_out_of_fold_predictions",
+    "ranked_models": [
+      "xgboost",
+      "random_forest",
+      "pytorch_mlp",
+      "decision_tree",
+      "logistic"
+    ],
+    "prepared_identity": "08b8d1d44dcf8363b036fbbe1324033d46260c97d305f58fd24c2352713ea871",
+    "student_test_is_development": true
+  },
+  "serialization": "joblib_zlib_level_3"
+}

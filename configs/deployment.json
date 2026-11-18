@@ -1,0 +1,8 @@
+{
+  "mode": "development",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "request_timeout_seconds": 120,
+  "job_timeout_seconds": 900,
+  "database_url": ""
+}

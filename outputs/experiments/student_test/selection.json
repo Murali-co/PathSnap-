@@ -1,0 +1,20 @@
+{
+  "model": "xgboost",
+  "rule": [
+    "cv_mean_trip_top1",
+    "cv_macro_f1",
+    "negative_cv_conditional_observation_loss",
+    "negative_cv_top1_std",
+    "negative_fit_seconds"
+  ],
+  "basis": "training_out_of_fold_predictions",
+  "ranked_models": [
+    "xgboost",
+    "random_forest",
+    "pytorch_mlp",
+    "decision_tree",
+    "logistic"
+  ],
+  "prepared_identity": "08b8d1d44dcf8363b036fbbe1324033d46260c97d305f58fd24c2352713ea871",
+  "student_test_is_development": true
+}

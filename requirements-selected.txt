@@ -1,0 +1,1 @@
+# Selected model does not require PyTorch for inference.
