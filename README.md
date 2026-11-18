@@ -115,3 +115,22 @@ Observation scoring is provisional ordered-reference alignment, not an organiser
 Physical Laptop 2 networking, Windows execution, and official organiser scoring require those external environments; localhost checks do not establish them. New full-data retraining/tuning remains the user's action. Existing saved-model inference results and synthetic training regression tests are identified separately. AI assistance was used for implementation, debugging and report generation; the team must verify and understand the submission.
 
 Deployment and supplied ZIP archives are intentionally excluded from GitHub. Generate current deployment packages locally with `python scripts/package_dist.py`.
+
+## React frontend from the supplied archive
+
+The extracted React/Vite/TypeScript application is in `frontend-web/`. It displays the backend's actual decoded/classifier/network geometry and derived-reference scores. The Streamlit frontend remains available separately.
+
+```bash
+cd frontend-web
+npm ci
+export VITE_API_BASE_URL="http://<LAPTOP_1_LAN_IP>:8000"
+npm run dev
+# TypeScript and production build:
+npm run build
+```
+
+Open the Vite URL (normally http://localhost:5173). Browser requests use its same-origin `/api` development proxy. Configure an equivalent reverse proxy when serving production build files. Dependencies, `.env.local`, build output and ZIP archives are excluded from GitHub.
+
+`outputs/verification/react_browser_checks.json` records the local browser integration check: ten available trip choices, an actual backend prediction, decoded geometry, an aggregate score, and a repeated request passed. This is not physical two-laptop verification.
+
+The consolidated mentor report is `reports/PathSnap_Technical_Report.pdf`. Regenerate it from current saved evidence using `python scripts/generate_report.py`.

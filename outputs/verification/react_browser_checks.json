@@ -1,0 +1,10 @@
+{
+  "react_build_passed": true,
+  "ten_trip_options": true,
+  "actual_backend_prediction": true,
+  "decoded_geometry_displayed": true,
+  "aggregate_score_displayed": true,
+  "repeated_run": true,
+  "browser_errors": [],
+  "physical_lan_test": false
+}
