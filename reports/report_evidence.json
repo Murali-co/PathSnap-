@@ -1,0 +1,194 @@
+{
+  "report_date": "18 November 2026",
+  "counts": {
+    "train": {
+      "trips": 80,
+      "observations": 208417,
+      "known": 208002,
+      "unknown": 415,
+      "candidates": 1612959,
+      "positive": 187005,
+      "hits": 187005,
+      "ambiguous": 46045,
+      "no_candidates": 0
+    },
+    "student_test": {
+      "trips": 10,
+      "observations": 19160,
+      "known": 19160,
+      "unknown": 0,
+      "candidates": 169191,
+      "positive": 19128,
+      "hits": 19128,
+      "ambiguous": 4825,
+      "no_candidates": 0
+    }
+  },
+  "aggregate": {
+    "classifier": {
+      "mean_top1": 0.8749108980605994,
+      "pooled_top1": 0.8626826722338204,
+      "mean_continuity": 0.9549376781163275,
+      "pooled_continuity": 0.9471512872734869,
+      "mean_route_f1": 0.8619172192831662,
+      "mean_edit": 0.41966834572035766,
+      "eligible_pairs": 19149,
+      "legal_pairs": 18137,
+      "gap_pairs": 1
+    },
+    "decoded": {
+      "mean_top1": 0.9101059193596024,
+      "pooled_top1": 0.9000521920668059,
+      "mean_continuity": 0.9994774777079533,
+      "pooled_continuity": 0.999425557470364,
+      "mean_route_f1": 0.9409717668832169,
+      "mean_edit": 0.18594702845588923,
+      "eligible_pairs": 19149,
+      "legal_pairs": 19138,
+      "gap_pairs": 1
+    }
+  },
+  "model_metadata": {
+    "logistic": {
+      "class_name": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 500,
+        "solver": "lbfgs",
+        "class_weight": "balanced",
+        "n_jobs": null
+      },
+      "features": 22,
+      "artifact_sha256": "882ff5a41322563251686f5c0eeeff342712022ebff0428403dd427c302b4a02"
+    },
+    "decision_tree": {
+      "class_name": "DecisionTreeClassifier",
+      "params": {
+        "class_weight": "balanced",
+        "max_depth": 12,
+        "min_samples_leaf": 20,
+        "max_features": null,
+        "criterion": "gini"
+      },
+      "features": 22,
+      "artifact_sha256": "0d7c39f8836411e9b495d86c85df11eadfa59b36b0c6ee883b993db29f6c69c6"
+    },
+    "random_forest": {
+      "class_name": "RandomForestClassifier",
+      "params": {
+        "class_weight": "balanced",
+        "max_depth": 16,
+        "min_samples_leaf": 5,
+        "n_estimators": 200,
+        "max_features": "sqrt",
+        "criterion": "gini",
+        "n_jobs": -1
+      },
+      "features": 22,
+      "artifact_sha256": "d50430970c4de75c8c1f570f2f847f773bdb99326ad4cb9e45bb8909641ff44a"
+    },
+    "xgboost": {
+      "class_name": "XGBClassifier",
+      "params": {
+        "max_depth": 6,
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "objective": "binary:logistic",
+        "eval_metric": "logloss",
+        "tree_method": "hist",
+        "device": "cuda",
+        "n_jobs": 2
+      },
+      "features": 22,
+      "artifact_sha256": "971eba7fa3d05e9a26b599a3dce6312e789140b7472cc9481e745a55670f7b5e"
+    },
+    "pytorch_mlp": {
+      "class_name": "TorchMLP",
+      "params": {
+        "hidden1": 64,
+        "hidden2": 64,
+        "epochs": 20,
+        "batch_size": 4096,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.1,
+        "device": "cpu"
+      },
+      "features": 22,
+      "artifact_sha256": "17da038012ee1a7551f191971c30f41fada2137b936addbb8ed1944c08a6fbca"
+    }
+  },
+  "partial_tuning": [
+    {
+      "trial": 0,
+      "state": "COMPLETE",
+      "value": 0.8975274820286353
+    },
+    {
+      "trial": 1,
+      "state": "COMPLETE",
+      "value": 0.90037524398588
+    },
+    {
+      "trial": 2,
+      "state": "COMPLETE",
+      "value": 0.9014767393435585
+    },
+    {
+      "trial": 3,
+      "state": "COMPLETE",
+      "value": 0.9015777559702359
+    },
+    {
+      "trial": 4,
+      "state": "COMPLETE",
+      "value": 0.8918207491108979
+    },
+    {
+      "trial": 5,
+      "state": "COMPLETE",
+      "value": 0.8969962167400473
+    },
+    {
+      "trial": 6,
+      "state": "COMPLETE",
+      "value": 0.897030847384442
+    },
+    {
+      "trial": 7,
+      "state": "COMPLETE",
+      "value": 0.8995376356420631
+    },
+    {
+      "trial": 8,
+      "state": "COMPLETE",
+      "value": 0.8960057910968402
+    },
+    {
+      "trial": 9,
+      "state": "COMPLETE",
+      "value": 0.9013902240534916
+    },
+    {
+      "trial": 10,
+      "state": "RUNNING",
+      "value": null
+    }
+  ],
+  "partial_best_params": {
+    "colsample_bytree": 0.6185801650879991,
+    "learning_rate": 0.018187859051288217,
+    "max_depth": 9,
+    "min_child_weight": 2.333481883618462,
+    "n_estimators": 282,
+    "reg_alpha": 0.0029369981104377003,
+    "reg_lambda": 0.00015619562520792737,
+    "subsample": 0.836965827544817
+  },
+  "physical_lan_verified": false,
+  "official_scoring_verified": false,
+  "source_branch": "https://github.com/Murali-co/PathSnap-/tree/feature/frontend-web",
+  "report_sha256": "ed4ff1db1c2e8a2a666e6ddba90382e72b873c486cc7c6455cbe4d9e1b940c24"
+}

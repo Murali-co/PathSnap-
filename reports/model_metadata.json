@@ -1,0 +1,72 @@
+{
+  "logistic": {
+    "class_name": "LogisticRegression",
+    "params": {
+      "C": 1.0,
+      "max_iter": 500,
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "n_jobs": null
+    },
+    "features": 22,
+    "artifact_sha256": "882ff5a41322563251686f5c0eeeff342712022ebff0428403dd427c302b4a02"
+  },
+  "decision_tree": {
+    "class_name": "DecisionTreeClassifier",
+    "params": {
+      "class_weight": "balanced",
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "max_features": null,
+      "criterion": "gini"
+    },
+    "features": 22,
+    "artifact_sha256": "0d7c39f8836411e9b495d86c85df11eadfa59b36b0c6ee883b993db29f6c69c6"
+  },
+  "random_forest": {
+    "class_name": "RandomForestClassifier",
+    "params": {
+      "class_weight": "balanced",
+      "max_depth": 16,
+      "min_samples_leaf": 5,
+      "n_estimators": 200,
+      "max_features": "sqrt",
+      "criterion": "gini",
+      "n_jobs": -1
+    },
+    "features": 22,
+    "artifact_sha256": "d50430970c4de75c8c1f570f2f847f773bdb99326ad4cb9e45bb8909641ff44a"
+  },
+  "xgboost": {
+    "class_name": "XGBClassifier",
+    "params": {
+      "max_depth": 6,
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "tree_method": "hist",
+      "device": "cuda",
+      "n_jobs": 2
+    },
+    "features": 22,
+    "artifact_sha256": "971eba7fa3d05e9a26b599a3dce6312e789140b7472cc9481e745a55670f7b5e"
+  },
+  "pytorch_mlp": {
+    "class_name": "TorchMLP",
+    "params": {
+      "hidden1": 64,
+      "hidden2": 64,
+      "epochs": 20,
+      "batch_size": 4096,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "dropout": 0.1,
+      "device": "cpu"
+    },
+    "features": 22,
+    "artifact_sha256": "17da038012ee1a7551f191971c30f41fada2137b936addbb8ed1944c08a6fbca"
+  }
+}
