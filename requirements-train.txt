@@ -1,0 +1,8 @@
+-r requirements-backend.txt
+pandas==3.0.6
+torch>=2.5,<3
+optuna==5.1.0
+matplotlib==3.11.2
+reportlab==5.0.1
+pytest==9.2.0
+httpx==0.28.1

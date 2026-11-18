@@ -1,0 +1,30 @@
+[
+  {
+    "trip_id": "00000013",
+    "observations": 2580,
+    "arcs": 307392,
+    "total_seconds": 2.5498699480012874,
+    "timing": {
+      "features_seconds": 1.4158390520024113,
+      "classifier_seconds": 0.03763907000029576,
+      "decoder_seconds": 0.7419512800006487,
+      "reconstruction_seconds": 0.20567626300180564,
+      "prediction_seconds": 2.4011090920030256
+    },
+    "blocks": 6
+  },
+  {
+    "trip_id": "00000054",
+    "observations": 19313,
+    "arcs": 116916,
+    "total_seconds": 10.134423931998754,
+    "timing": {
+      "features_seconds": 3.722993907002092,
+      "classifier_seconds": 0.21206115500172018,
+      "decoder_seconds": 5.175397459999658,
+      "reconstruction_seconds": 0.8846470749995206,
+      "prediction_seconds": 9.995103682998888
+    },
+    "blocks": 348
+  }
+]

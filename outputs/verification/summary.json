@@ -1,0 +1,8 @@
+{
+  "mode": "development",
+  "trip_count": 10,
+  "repeated_prediction_passed": true,
+  "unknown_trip_rejected": true,
+  "physical_lan_test": false,
+  "official_evaluation": false
+}

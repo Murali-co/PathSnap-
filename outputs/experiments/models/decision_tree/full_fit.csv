@@ -1,0 +1,2 @@
+model,training_trips,resolved_candidate_rows,positive_candidate_rows,negative_candidate_rows,fit_seconds,partition
+decision_tree,80,1609263,187005,1422258,25.984381529997336,train_80_full_resolved

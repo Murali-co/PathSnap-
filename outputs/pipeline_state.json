@@ -1,0 +1,51 @@
+{
+  "started_at": 1794996258.5874574,
+  "status": "completed",
+  "cycles": 1,
+  "stages": [
+    {
+      "stage": "environment",
+      "status": "completed",
+      "started_at": 1794996258.5874639,
+      "finished_at": 1794996258.6253338
+    },
+    {
+      "stage": "compare",
+      "status": "completed",
+      "started_at": 1794996258.625811,
+      "finished_at": 1794996276.2469244
+    },
+    {
+      "stage": "export_baseline",
+      "status": "completed",
+      "started_at": 1794996276.2475023,
+      "finished_at": 1794996277.7363918
+    },
+    {
+      "stage": "regression_tests",
+      "status": "completed",
+      "started_at": 1794996277.7369814,
+      "finished_at": 1794996283.5943274
+    },
+    {
+      "stage": "api_loop",
+      "status": "completed",
+      "started_at": 1794996283.594966,
+      "finished_at": 1794996310.6425414
+    },
+    {
+      "stage": "technical_report",
+      "status": "completed",
+      "started_at": 1794996310.642982,
+      "finished_at": 1794996312.7441645
+    },
+    {
+      "stage": "package",
+      "status": "completed",
+      "started_at": 1794996312.7445898,
+      "finished_at": 1794996312.8258762
+    }
+  ],
+  "cycle": 1,
+  "finished_at": 1794996312.8263218
+}

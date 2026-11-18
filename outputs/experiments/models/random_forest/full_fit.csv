@@ -1,0 +1,2 @@
+model,training_trips,resolved_candidate_rows,positive_candidate_rows,negative_candidate_rows,fit_seconds,partition
+random_forest,80,1609263,187005,1422258,133.1915538840003,train_80_full_resolved
